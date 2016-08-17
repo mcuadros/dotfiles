@@ -12,5 +12,5 @@ fundle plugin 'tuvistavie/fish-fastdir'
 fundle plugin 'tuvistavie/fish-ssh-agent'
 fundle init
 
-bass source '/home/mcuadros/.google-cloud-sdk/path.bash.inc'
-bass source '/home/mcuadros/.google-cloud-sdk/completion.bash.inc'
+bass source '/opt/google-cloud-sdk/path.bash.inc'
+bass source '/opt/google-cloud-sdk/completion.bash.inc'
