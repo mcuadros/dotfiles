@@ -7,6 +7,7 @@ set -gx CLOUDSDK_PYTHON /usr/bin/python2
 set -gx EDITOR /usr/bin/vim
 set -gx BROWSER /usr/bin/google-chrome-stable
 
+
 fundle plugin 'edc/bass'
 fundle plugin 'tuvistavie/fish-fastdir'
 fundle plugin 'tuvistavie/fish-ssh-agent'
@@ -14,3 +15,6 @@ fundle init
 
 bass source '/opt/google-cloud-sdk/path.bash.inc'
 bass source '/opt/google-cloud-sdk/completion.bash.inc'
+
+#xrandr --output eDP1 --dpi 200 --auto --output DP1 --dpi 96 --auto --rotate right --right-of eDP1
+
