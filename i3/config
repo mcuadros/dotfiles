@@ -41,6 +41,10 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# screenshoot 
+bindsym Print exec xfce4-screenshooter
+bindsym $mod+Print exec xfce4-screenshooter
+
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -194,6 +198,8 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 20
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 
 
 
+
+bindsym $mod+Shift+s exec --no-startup-id ~/.i3/screen.sh, mode "default"
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status

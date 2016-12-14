@@ -12,7 +12,8 @@
     horizontal_padding = 8
     dmenu = /usr/bin/dmenu -p dunst:
     browser = /usr/bin/google-chrome-stable
-
+    sticky_history = no
+    audiable_notification = no
 [frame]
     width = 1
     color = "#585858"

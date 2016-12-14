@@ -8,5 +8,6 @@
     "go.gopath": "/home/mcuadros/workspace/go",
     "go.goroot": "/usr/lib/go",
     "amVim.bindCtrlCommands": false,
-    "files.autoSave": "onFocusChange"
+    "files.autoSave": "onFocusChange",
+    "window.zoomLevel": 0
 }
