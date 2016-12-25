@@ -1,0 +1,36 @@
+[global_config]
+  borderless = True
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  tab_position = hidden
+[keybindings]
+  paste = <Primary>v
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    allow_bold = False
+    background_color = "#242424"
+    background_image = None
+    custom_command = tmux
+    font = DejaVu Sans Mono 10
+    foreground_color = "#ffffff"
+    icon_bell = False
+    palette = "#242424:#f92672:#6cc72c:#fe9720:#2190fc:#9358fe:#36af90:#8c8c8c:#4c4c4c:#ff80f4:#a7e22e:#ffee99:#5fd9ef:#ae82fe:#66efd5:#ebebeb"
+    show_titlebar = False
+    use_custom_command = True
+    use_system_font = False
+  [[monokai]]
+    allow_bold = False
+    background_color = "#ffffff"
+    background_image = None
+    font = DejaVu Sans Mono 10
+    foreground_color = "#000000"
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    use_system_font = False
