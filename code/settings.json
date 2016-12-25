@@ -9,5 +9,6 @@
     "go.goroot": "/usr/lib/go",
     "amVim.bindCtrlCommands": false,
     "files.autoSave": "onFocusChange",
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "workbench.sideBar.location": "left"
 }

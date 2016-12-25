@@ -18,7 +18,7 @@ bass source '/opt/google-cloud-sdk/completion.bash.inc'
 
 
 alias ical='gcalcli --calendar maximo@sourced.tech agenda'           
-
+alias lock='.config/i3/lock.sh'
 
 #xrandr --output eDP1 --dpi 200 --auto --output DP1 --dpi 96 --auto --rotate right --right-of eDP1
 
