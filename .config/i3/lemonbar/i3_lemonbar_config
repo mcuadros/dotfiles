@@ -3,7 +3,7 @@
 
 panel_fifo="/tmp/i3_lemonbar_${USER}"
 geometry="x30"
-font="DejaVu Sans Mono for Powerline-10"
+font="DejaVu Sans Mono for Powerline-9"
 iconfont="FontAwesome-9"
 res_w=$(xrandr | grep "current" | awk '{print $8a}')
 snd_cha=$(amixer get Master | grep "Playback channels:" | awk '{if ($4 == "") {printf "%s: Playback", $3} else {printf "%s %s: Playback", $3, $4}}')
