@@ -110,21 +110,14 @@ exec Telegram
 exec google-chrome-stable
 assign [class="^Slack$"] → 3:chat
 assign [class="^Code$"] → 2:code
-
 for_window [class="^terminator$"] move bottom 
+
 # Telegram configuration
-#bindsym $mod+u [title="^Telegram"] scratchpad show
-#for_window [class="^Telegram$"] move right 
-#for_window [title="^Telegram$"] move scratchpad
-#for_window [class="^Telegram$"] resize shrink width 25 px or 25 ppt
-#for_window [title="^Telegram"] focus; floating enable; resize grow width 200px; resize grow height 100px; move left 200px; move up 100px
 bindsym $mod+t [title="^Telegram"] scratchpad show
 bindsym $mod+shift+t exec telegram
 for_window [title="^Telegram"] move scratchpad
 for_window [title="^Telegram"] focus; move right;resize grow width 200px; 
 
-
- 
 # switch to workspace
 bindsym $mod+1 workspace 1:browser
 bindsym $mod+2 workspace 2:code
