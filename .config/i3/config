@@ -15,11 +15,12 @@ set $mod Mod4
 font pango:monospace 8
 
 # Border configuration
-hide_edge_borders none
-new_window pixel 1
-new_float pixel 1
+hide_edge_borders none 
+new_float none
+new_window pixel 1 
 
 bindsym $mod+Tab workspace back_and_forth
+
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -109,7 +110,9 @@ exec Telegram
 exec google-chrome-stable
 assign [class="^Slack$"] → 3:chat
 assign [class="^Code$"] → 2:code
-for_window [class="^terminator$"] move bottom 
+
+
+
 
 # Telegram configuration
 bindsym $mod+t [title="^Telegram"] scratchpad show

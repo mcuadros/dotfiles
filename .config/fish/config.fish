@@ -8,7 +8,7 @@ set -gx CLOUDSDK_PYTHON /usr/bin/python2
 set -gx EDITOR /usr/bin/vim
 set -gx BROWSER /usr/bin/google-chrome-stable
 
-# requires https://github.com/tuvistavie/fundle 
+# requires https://github.com/tuvistavie/fundle
 fundle plugin 'edc/bass'
 fundle plugin 'tuvistavie/fish-fastdir'
 fundle plugin 'tuvistavie/fish-ssh-agent'
@@ -18,7 +18,7 @@ bass source '/opt/google-cloud-sdk/path.bash.inc'
 bass source '/opt/google-cloud-sdk/completion.bash.inc'
 
 
-alias ical='gcalcli --calendar maximo@sourced.tech agenda'           
+alias ical='gcalcli --calendar maximo@sourced.tech agenda'
 alias lock='.config/i3/lock.sh'
 alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 

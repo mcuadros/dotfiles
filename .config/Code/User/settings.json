@@ -1,13 +1,13 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "explorer.en    ableDragAndDrop": false,
+    "explorer.enableDragAndDrop": false,
     "editor.rulers": [80,100],
     "editor.wrappingColumn": 120,
     "window.restoreFullscreen": true,
     "explorer.openEditors.visible": 0,
     "go.gopath": "/home/mcuadros/workspace/go",
     "go.goroot": "/usr/lib/go",
-    "amVim.bindCtrlCommands": false,
+    "vim.useCtrlKeys": false,
     "files.autoSave": "onFocusChange",
     "window.zoomLevel": 0,
     "workbench.sideBar.location": "left"
