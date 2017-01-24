@@ -8,6 +8,9 @@ set -gx CLOUDSDK_PYTHON /usr/bin/python2
 set -gx EDITOR /usr/bin/vim
 set -gx BROWSER /usr/bin/google-chrome-stable
 
+
+set -gx PATH $HOME/.cargo/bin $PATH
+
 # requires https://github.com/tuvistavie/fundle
 fundle plugin 'edc/bass'
 fundle plugin 'tuvistavie/fish-fastdir'
