@@ -9,5 +9,8 @@ fi
 export GDK_SCALE=2
 export GDK_DPI_SCALE=1
 
+setxkbmap -v us -variant altgr-intl
+
 /home/mcuadros/.config/i3/screen.sh
 exec i3
+statnot &
