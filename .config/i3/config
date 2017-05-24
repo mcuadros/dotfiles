@@ -102,30 +102,33 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-# Initial layout
-exec stanot 
+# workspace names
+set $tag1 " 1  web "
+set $tag2 " 2  dev "
+set $tag3 " 3  chat "
+set $tag4 " 4  term "
+set $tag5 " 5  music "
+
+# initial layout
 exec slack
 exec code
 exec Telegram
 exec google-chrome-stable
-assign [class="^Slack$"] → 3:chat
-assign [class="^Code$"] → 2:code
+assign [class="^Slack$"] → $tag3
+assign [class="^Code$"] → $tag2
 
-
-
-
-# Telegram configuration
+# telegram configuration
 bindsym $mod+t [title="^Telegram"] scratchpad show
 bindsym $mod+shift+t exec telegram
 for_window [title="^Telegram"] move scratchpad
 for_window [title="^Telegram"] focus; move right;resize grow width 200px; 
 
 # switch to workspace
-bindsym $mod+1 workspace 1:browser
-bindsym $mod+2 workspace 2:code
-bindsym $mod+3 workspace 3:chat
-bindsym $mod+4 workspace 4:term
-bindsym $mod+5 workspace 5
+bindsym $mod+1 workspace $tag1
+bindsym $mod+2 workspace $tag2
+bindsym $mod+3 workspace $tag3
+bindsym $mod+4 workspace $tag4
+bindsym $mod+5 workspace $tag5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
@@ -133,11 +136,11 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1:browser
-bindsym $mod+Shift+2 move container to workspace 2:code
-bindsym $mod+Shift+3 move container to workspace 3:chat
-bindsym $mod+Shift+4 move container to workspace 4:term
-bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+1 move container to workspace $tag1
+bindsym $mod+Shift+2 move container to workspace $tag2
+bindsym $mod+Shift+3 move container to workspace $tag3
+bindsym $mod+Shift+4 move container to workspace $tag4
+bindsym $mod+Shift+5 move container to workspace $tag5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
@@ -195,8 +198,28 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 
 
 
-bindsym $mod+Shift+s exec --no-startup-id ~/.i3/screen.sh, mode "default"
+bindsym $mod+Shift+s exec ~/.config/i3/screen.sh
+bindsym $mod+XF86MonBrightnessUp exec /home/mcuadros/config/.i3/screen.sh
 
+set $accent #073642
+set $borders #2b4046
+set $white #FFFFFF
+set $bg #002b36
+set $bgws #001e26
+set $textaccent #eee8d5
+set $inactive #839496
+
+bar {
+    status_command py3status -c ~/.config/i3/i3status.conf
+    position bottom
+    colors { 
+        separator $bg
+        background $bg
+        inactive_workspace $bgws $bgws $inactive
+        active_workspace $bgws $bgws $inactive
+        focused_workspace $accent $accent $textaccent
+    }
+}
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -210,10 +233,14 @@ bindsym $mod+Shift+s exec --no-startup-id ~/.i3/screen.sh, mode "default"
 #    inactive_workspace #333333 #333333 #AAAAAA
 #  }
 #}
-bar {
-        i3bar_command ~/.config/i3/lemonbar/i3_lemonbar.sh
-}
+#bar {
+#        i3bar_command ~/.config/i3/lemonbar/i3_lemonbar.sh
+#}
 
 client.unfocused #333333 #333333 #FFFFFF #333333
 client.focused_inactive #333333 #333333 #FFFFFF #000000
 client.focused #000000 #000000 #FFFFFF #000000
+
+
+
+#output "eDP-1" scale 2
