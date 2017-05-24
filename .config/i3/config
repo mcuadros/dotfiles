@@ -195,11 +195,8 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 
 # decrease screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 
-
-
-
+# screen resolution 
 bindsym $mod+Shift+s exec ~/.config/i3/screen.sh
-bindsym $mod+XF86MonBrightnessUp exec /home/mcuadros/config/.i3/screen.sh
 
 set $accent #073642
 set $borders #2b4046
