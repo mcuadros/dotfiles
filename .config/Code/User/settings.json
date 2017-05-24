@@ -2,7 +2,8 @@
 {
     "explorer.enableDragAndDrop": false,
     "editor.rulers": [80,100],
-    "editor.wrappingColumn": 120,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
     "window.restoreFullscreen": true,
     "explorer.openEditors.visible": 0,
     "go.gopath": "/home/mcuadros/workspace/go",
@@ -10,5 +11,15 @@
     "vim.useCtrlKeys": false,
     "files.autoSave": "onFocusChange",
     "window.zoomLevel": 0,
-    "workbench.sideBar.location": "left"
+    "workbench.sideBar.location": "left",
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "boundary",
+    "workbench.colorTheme": "Monokai Dark Soda",
+    "[cpp]": {
+        "editor.quickSuggestions": false
+    },
+    "[c]": {
+        "editor.quickSuggestions": false
+    },
+    "workbench.welcome.enabled": false
 }
