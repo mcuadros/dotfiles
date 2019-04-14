@@ -10,16 +10,17 @@
     "go.goroot": "/usr/lib/go",
     "vim.useCtrlKeys": false,
     "files.autoSave": "onFocusChange",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "workbench.sideBar.location": "left",
     "editor.renderControlCharacters": false,
     "editor.renderWhitespace": "boundary",
-    "workbench.colorTheme": "Monokai Dark Soda",
     "[cpp]": {
         "editor.quickSuggestions": false
     },
     "[c]": {
         "editor.quickSuggestions": false
     },
-    "workbench.welcome.enabled": false
+    "workbench.welcome.enabled": false,
+    "git.confirmSync": false,
+    "editor.multiCursorModifier": "ctrlCmd"
 }

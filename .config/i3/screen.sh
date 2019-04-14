@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-IN="eDP-1"
-EXT="DP-1"
+IN="eDP1"
+EXT="DP2"
 
 xrandr > /dev/null
 xrandr | grep "$EXT disconnected" > /dev/null
 
 if [ $? -eq 0 ]; then
-  xrandr --output $IN --dpi 216 --primary --auto --output $EXT --off
+  xrandr --output $IN --dpi 277 --primary --auto --output $EXT --off
   #xmodmap -e "pointer = 1 2 3" 2> /dev/null
   echo "-> Laptop mode"
 else

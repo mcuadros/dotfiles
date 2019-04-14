@@ -22,6 +22,9 @@ new_window pixel 1
 bindsym $mod+Tab workspace back_and_forth
 
 
+#redshift
+exec --no-startup-id redshift-gtk
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
