@@ -1,28 +1,29 @@
 set -gx GOPATH "/home/mcuadros/workspace/go"
 set -gx PATH $GOPATH/bin/ $PATH
+set -gx PATH /snap/bin/ $PATH
+set -gx PATH /var/lib/snapd/snap/bin $PATH
 set -gx PATH $HOME/.yarn/bin/ $PATH
-set -gx PATH $HOME/.gem/ruby/2.5.0/bin/ $PATH
+set -gx PATH $HOME/.cabal/bin $PATH
+set -gx PATH $HOME/.ghcup/bin $PATH
+set -gx PATH /opt/gradle/gradle-6.0.1/bin $PATH
 set -gx CLOUDSDK_PYTHON /usr/bin/python2
 set -gx EDITOR /usr/bin/vim
-set -gx BROWSER /usr/bin/google-chrome-stable
-set -gx QT_AUTO_SCREEN_SCALE_FACTOR 1.5 
-#set -gx PATH $HOME/.config/yarn/global/node_modules/.bin/  $PATH
+set -gx BROWSER /usr/bin/brave
+set -gx PATH /home/mcuadros/.nvm/versions/node/v10.17.0/bin/ $PATH
 set -x GPG_TTY (tty)
+set -gx GOPRIVATE gitlab.com/5959
 
 # requires https://github.com/tuvistavie/fundle
 fundle plugin 'edc/bass'
 fundle plugin 'tuvistavie/fish-ssh-agent'
 fundle init
 
-bass source '/opt/google-cloud-sdk/path.bash.inc'
-bass source '/opt/google-cloud-sdk/completion.bash.inc'
-
-alias ical='gcalcli --calendar maximo@sourced.tech agenda'
+alias kall='kubectl get all'
+alias k='kubectl'
 alias lock='.config/i3/lock.sh'
 alias battle='wine "./.wine/drive_c/Program Files (x86)/Blizzard App/Battle.net.8733/Battle.net.exe"'
 
+setxkbmap us -variant altgr-intl
+
+
 alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-set -gx CHANGELOG_GITHUB_TOKEN a2a540b2625c468151aee6c9949c958d2cab13d9
-set -gx ONLINE_TOKEN d9130bbca4b37d58aa8767fa78ddf46fa926c8ad
-set -gx OCTOPRINT_HOST http://10.3.167.147/
-set -gx OCTOPRINT_APIKEY DE3E488D96C44AB182FF8608223784F9   

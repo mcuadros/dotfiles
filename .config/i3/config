@@ -116,7 +116,7 @@ set $tag5 " 5  music "
 exec slack
 exec code
 exec Telegram
-exec google-chrome-stable
+#exec brave
 assign [class="^Slack$"] → $tag3
 assign [class="^Code$"] → $tag2
 
@@ -199,7 +199,7 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 20
 # decrease screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 
 # screen resolution 
-bindsym $mod+Shift+s exec ~/.config/i3/screen.sh
+bindsym $mod+Shift+s exec ~/.screenlayour/screen.sh
 
 set $accent #073642
 set $borders #2b4046
